@@ -1,0 +1,18 @@
+// App.tsx
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
+import HomeScreen from './components/HomeScreen';
+import CatBreedDetailScreen from './components/CatBreedDetailScreen';
+
+const Stack = createStackNavigator();
+
+export default function App() {
+    return (
+       
+            <Stack.Navigator initialRouteName="Home">
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="CatBreedDetail" component={CatBreedDetailScreen} />
+            </Stack.Navigator>
+    );
+}

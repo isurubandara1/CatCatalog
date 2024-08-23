@@ -11,7 +11,7 @@ const CatBreedDetailScreen = ({ route }: any) => {
             <Text style={styles.title}>{breed.name}</Text>
             <Image source={{ uri: breed.image.url }} style={styles.image} />
             <Text>Origin: {breed.origin}</Text>
-            <Text>Life Span: {breed.lifespan}</Text>
+            {/* <Text>Life Span: {breed.lifespan}</Text> */}
             <Text>Description: {breed.description}</Text>
         </View>
     );
@@ -25,10 +25,11 @@ const styles = StyleSheet.create({
     title: {
         fontSize: 24,
         fontWeight: 'bold',
+        color:'white',
     },
     image: {
-        width: '100%',
-        height: 200,
+        width: '50%',
+        height: 100,
         borderRadius: 10,
         marginVertical: 10,
     },

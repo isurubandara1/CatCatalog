@@ -3,7 +3,7 @@ export interface CatBreed {
     id: string;
     name: string;
     origin: string;
-    lifespan: string;
+    //lifespan: string;
     description: string;
     image: {
         url: string;

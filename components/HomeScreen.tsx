@@ -8,9 +8,9 @@ const HomeScreen = ({ navigation }: any) => {
 
     useEffect(() => {
         const fetchBreeds = async () => {
-            const response = await fetch('https://api.thecatapi.com/v1/breeds?limit=20', {
+            const response = await fetch('https://api.thecatapi.com/v1/breeds?limit=10', {
                 headers: {
-                    'x-api-key': 'YOUR_API_KEY' // Replace with your API key
+                    'x-api-key': 'live_VAsgDzpM2cmIPLe8PYFUClLxZtqPuemLySWKCcmB4C7CV82mXRhxrl4jJSM6SDan' 
                 }
             });
             const data = await response.json();
